@@ -9,6 +9,7 @@
 import Foundation
 
 class Measurement {
+    weak var event: Event?
     var _id: Int
     
     init(id: Int) {

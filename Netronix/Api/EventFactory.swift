@@ -48,6 +48,9 @@ class EventFactory {
         }
         
         let event = Event(id: _id, name: name, unit: unit, measurements: measurements)
+        for measurement in measurements {
+            measurement.event = event
+        }
         return event
     }
     
