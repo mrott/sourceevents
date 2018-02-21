@@ -10,7 +10,7 @@ import XCTest
 import SwiftyJSON
 @testable import Netronix
 
-class NetronixTests: XCTestCase {
+class NetronixTests: XCTestCase, EnvDevEventSourceDelegate {
     
     override func setUp() {
         super.setUp()
@@ -30,6 +30,11 @@ class NetronixTests: XCTestCase {
         eventSource.startListening()
         
         wait(for: [envDevEventSourceWorkingExpectation!], timeout: 100)
+    }
+    
+    func envDevEventsSourceReceived(events: [Event]) {
+        envDevEventSourceWorkingExpectation?.fulfill()
+        envDevEventSourceWorkingExpectation = nil
     }
     
     func testEventFactory() {
@@ -56,11 +61,4 @@ class NetronixTests: XCTestCase {
         XCTAssert(locationMeasurement is LocationMeasurement)
     }
     
-}
-
-extension NetronixTests: EnvDevEventSourceDelegate {
-    func envDevEventsSourceReceived(events: [Event]) {
-        envDevEventSourceWorkingExpectation?.fulfill()
-        envDevEventSourceWorkingExpectation = nil
-    }
 }
