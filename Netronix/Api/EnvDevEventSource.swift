@@ -10,7 +10,7 @@ import Foundation
 import IKEventSource
 
 protocol EnvDevEventSourceDelegate: class {
-    func envDevEventsSourceReceived(objects: [Any])
+    func envDevEventsSourceReceived(events: [Event])
 }
 
 class EnvDevEventSource {
@@ -34,12 +34,22 @@ class EnvDevEventSource {
             
         }
         
-        eventSource.onMessage { (id, event, data) in
-            
+        eventSource.onMessage {[weak self] (id, event, data) in
+            self?.updateWith(data: data)
         }
     }
     
     func stopListening() {
         eventSource?.close()
+    }
+    
+    fileprivate func updateWith(data: String?) {
+        if let data = data {
+            let events = EventFactory.makeEvents(data: data)
+            delegate?.envDevEventsSourceReceived(events: events)
+        }
+        else {
+            delegate?.envDevEventsSourceReceived(events: [])
+        }
     }
 }

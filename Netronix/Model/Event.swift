@@ -12,10 +12,14 @@ class Event {
     
     var _id: String
     var _name: String
+    var _unit: String?
+    var _measurements: [Measurement]
     
-    init(id: String, name: String) {
+    init(id: String, name: String, unit: String?, measurements: [Measurement]) {
         _id = id
         _name = name
+        _unit = unit
+        _measurements = measurements
     }
     
 }

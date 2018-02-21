@@ -19,6 +19,8 @@
 		842A8D5D203C72B800D3E295 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A8D5C203C72B800D3E295 /* Event.swift */; };
 		842A8D5F203C737700D3E295 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A8D5E203C737700D3E295 /* Measurement.swift */; };
 		842AB52D203D614300F86B4C /* ApiConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AB52C203D614300F86B4C /* ApiConfiguration.swift */; };
+		842AB52F203D65DF00F86B4C /* EventFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AB52E203D65DF00F86B4C /* EventFactory.swift */; };
+		842AB531203D6DD800F86B4C /* MeasurementFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AB530203D6DD800F86B4C /* MeasurementFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		842A8D5C203C72B800D3E295 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		842A8D5E203C737700D3E295 /* Measurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
 		842AB52C203D614300F86B4C /* ApiConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConfiguration.swift; sourceTree = "<group>"; };
+		842AB52E203D65DF00F86B4C /* EventFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFactory.swift; sourceTree = "<group>"; };
+		842AB530203D6DD800F86B4C /* MeasurementFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementFactory.swift; sourceTree = "<group>"; };
 		C438E6DB1F34BC2C43AFE155 /* Pods_NetronixTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetronixTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5DD0FDE58A943DB344FF87D /* Pods-NetronixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetronixTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetronixTests/Pods-NetronixTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +138,8 @@
 			children = (
 				842A8D5A203C6E1B00D3E295 /* EnvDevEventSource.swift */,
 				842AB52C203D614300F86B4C /* ApiConfiguration.swift */,
+				842AB52E203D65DF00F86B4C /* EventFactory.swift */,
+				842AB530203D6DD800F86B4C /* MeasurementFactory.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -370,11 +376,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				842A8D5D203C72B800D3E295 /* Event.swift in Sources */,
+				842AB531203D6DD800F86B4C /* MeasurementFactory.swift in Sources */,
 				842A8D3B203C6B1000D3E295 /* ViewController.swift in Sources */,
 				842A8D5F203C737700D3E295 /* Measurement.swift in Sources */,
 				842A8D39203C6B1000D3E295 /* AppDelegate.swift in Sources */,
 				842A8D5B203C6E1B00D3E295 /* EnvDevEventSource.swift in Sources */,
 				842AB52D203D614300F86B4C /* ApiConfiguration.swift in Sources */,
+				842AB52F203D65DF00F86B4C /* EventFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

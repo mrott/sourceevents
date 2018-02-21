@@ -30,7 +30,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: EnvDevEventSourceDelegate {
-    func envDevEventsSourceReceived(objects: [Any]) {
+    func envDevEventsSourceReceived(events: [Event]) {
         
     }
 }
