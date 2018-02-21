@@ -17,11 +17,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableView.rowHeight = UITableViewAutomaticDimension
-        
-        envDevEventSource = EnvDevEventSource(delegate: self)
-        envDevEventSource?.startListening()
+        setupStartStopButton()
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,6 +28,24 @@ class ViewController: UIViewController {
 
     deinit {
         envDevEventSource?.stopListening()
+    }
+    
+    fileprivate func setupStartStopButton() {
+        let title = envDevEventSource == nil ? "Start" : "Stop"
+        let button = UIBarButtonItem(title: title, style: .plain, target: self, action: #selector(startStopPressed))
+        navigationItem.rightBarButtonItem = button
+    }
+    
+    @objc fileprivate func startStopPressed() {
+        if envDevEventSource == nil {
+            envDevEventSource = EnvDevEventSource(delegate: self)
+            envDevEventSource?.startListening()
+        }
+        else {
+            envDevEventSource?.stopListening()
+            envDevEventSource = nil
+        }
+        setupStartStopButton()
     }
 }
 
