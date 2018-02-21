@@ -23,11 +23,23 @@ class EnvDevEventSource {
     
     fileprivate var eventSource: EventSource?
     
-    deinit {
-        eventSource?.close()
+    func startListening() {
+        let eventSource = EventSource(url: ApiConfiguration.url, headers: [:])
+        
+        eventSource.onOpen {
+            
+        }
+        
+        eventSource.onError { (error) in
+            
+        }
+        
+        eventSource.onMessage { (id, event, data) in
+            
+        }
     }
     
-    func startListening() {
-        
+    func stopListening() {
+        eventSource?.close()
     }
 }

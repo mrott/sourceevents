@@ -10,9 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var envDevEventSource: EnvDevEventSource?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        envDevEventSource = EnvDevEventSource(delegate: self)
+        envDevEventSource?.startListening()
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +24,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    deinit {
+        envDevEventSource?.stopListening()
+    }
 }
 
+extension ViewController: EnvDevEventSourceDelegate {
+    func envDevEventsSourceReceived(objects: [Any]) {
+        
+    }
+}
