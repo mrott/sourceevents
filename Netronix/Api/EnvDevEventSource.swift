@@ -37,6 +37,8 @@ class EnvDevEventSource {
         eventSource.onMessage {[weak self] (id, event, data) in
             self?.updateWith(data: data)
         }
+        
+        self.eventSource = eventSource
     }
     
     func stopListening() {
