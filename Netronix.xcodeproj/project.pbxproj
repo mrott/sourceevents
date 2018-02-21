@@ -21,6 +21,10 @@
 		842AB52D203D614300F86B4C /* ApiConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AB52C203D614300F86B4C /* ApiConfiguration.swift */; };
 		842AB52F203D65DF00F86B4C /* EventFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AB52E203D65DF00F86B4C /* EventFactory.swift */; };
 		842AB531203D6DD800F86B4C /* MeasurementFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AB530203D6DD800F86B4C /* MeasurementFactory.swift */; };
+		842AB533203D767400F86B4C /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AB532203D767400F86B4C /* EventTableViewCell.swift */; };
+		842AB535203D76D800F86B4C /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AB534203D76D800F86B4C /* LocationTableViewCell.swift */; };
+		842AB537203D77BE00F86B4C /* StringTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AB536203D77BE00F86B4C /* StringTableViewCell.swift */; };
+		842AB539203D77D300F86B4C /* DoubleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AB538203D77D300F86B4C /* DoubleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,10 @@
 		842AB52C203D614300F86B4C /* ApiConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConfiguration.swift; sourceTree = "<group>"; };
 		842AB52E203D65DF00F86B4C /* EventFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFactory.swift; sourceTree = "<group>"; };
 		842AB530203D6DD800F86B4C /* MeasurementFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementFactory.swift; sourceTree = "<group>"; };
+		842AB532203D767400F86B4C /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		842AB534203D76D800F86B4C /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		842AB536203D77BE00F86B4C /* StringTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTableViewCell.swift; sourceTree = "<group>"; };
+		842AB538203D77D300F86B4C /* DoubleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTableViewCell.swift; sourceTree = "<group>"; };
 		C438E6DB1F34BC2C43AFE155 /* Pods_NetronixTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetronixTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5DD0FDE58A943DB344FF87D /* Pods-NetronixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetronixTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetronixTests/Pods-NetronixTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +128,10 @@
 				842A8D3F203C6B1000D3E295 /* Assets.xcassets */,
 				842A8D41203C6B1000D3E295 /* LaunchScreen.storyboard */,
 				842A8D44203C6B1000D3E295 /* Info.plist */,
+				842AB532203D767400F86B4C /* EventTableViewCell.swift */,
+				842AB534203D76D800F86B4C /* LocationTableViewCell.swift */,
+				842AB536203D77BE00F86B4C /* StringTableViewCell.swift */,
+				842AB538203D77D300F86B4C /* DoubleTableViewCell.swift */,
 			);
 			path = Netronix;
 			sourceTree = "<group>";
@@ -375,14 +387,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842AB533203D767400F86B4C /* EventTableViewCell.swift in Sources */,
 				842A8D5D203C72B800D3E295 /* Event.swift in Sources */,
 				842AB531203D6DD800F86B4C /* MeasurementFactory.swift in Sources */,
 				842A8D3B203C6B1000D3E295 /* ViewController.swift in Sources */,
 				842A8D5F203C737700D3E295 /* Measurement.swift in Sources */,
 				842A8D39203C6B1000D3E295 /* AppDelegate.swift in Sources */,
+				842AB539203D77D300F86B4C /* DoubleTableViewCell.swift in Sources */,
+				842AB535203D76D800F86B4C /* LocationTableViewCell.swift in Sources */,
 				842A8D5B203C6E1B00D3E295 /* EnvDevEventSource.swift in Sources */,
 				842AB52D203D614300F86B4C /* ApiConfiguration.swift in Sources */,
 				842AB52F203D65DF00F86B4C /* EventFactory.swift in Sources */,
+				842AB537203D77BE00F86B4C /* StringTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
