@@ -15,6 +15,9 @@
 		842A8D40203C6B1000D3E295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842A8D3F203C6B1000D3E295 /* Assets.xcassets */; };
 		842A8D43203C6B1000D3E295 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842A8D41203C6B1000D3E295 /* LaunchScreen.storyboard */; };
 		842A8D4E203C6B1000D3E295 /* NetronixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A8D4D203C6B1000D3E295 /* NetronixTests.swift */; };
+		842A8D5B203C6E1B00D3E295 /* EnvDevEventSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A8D5A203C6E1B00D3E295 /* EnvDevEventSource.swift */; };
+		842A8D5D203C72B800D3E295 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A8D5C203C72B800D3E295 /* Event.swift */; };
+		842A8D5F203C737700D3E295 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A8D5E203C737700D3E295 /* Measurement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		842A8D49203C6B1000D3E295 /* NetronixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetronixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		842A8D4D203C6B1000D3E295 /* NetronixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetronixTests.swift; sourceTree = "<group>"; };
 		842A8D4F203C6B1000D3E295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		842A8D5A203C6E1B00D3E295 /* EnvDevEventSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvDevEventSource.swift; sourceTree = "<group>"; };
+		842A8D5C203C72B800D3E295 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		842A8D5E203C737700D3E295 /* Measurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
 		C438E6DB1F34BC2C43AFE155 /* Pods_NetronixTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetronixTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5DD0FDE58A943DB344FF87D /* Pods-NetronixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetronixTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetronixTests/Pods-NetronixTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +106,8 @@
 		842A8D37203C6B1000D3E295 /* Netronix */ = {
 			isa = PBXGroup;
 			children = (
+				842A8D58203C6DF200D3E295 /* Api */,
+				842A8D59203C6DF200D3E295 /* Model */,
 				842A8D38203C6B1000D3E295 /* AppDelegate.swift */,
 				842A8D3A203C6B1000D3E295 /* ViewController.swift */,
 				842A8D3C203C6B1000D3E295 /* Main.storyboard */,
@@ -117,6 +125,23 @@
 				842A8D4F203C6B1000D3E295 /* Info.plist */,
 			);
 			path = NetronixTests;
+			sourceTree = "<group>";
+		};
+		842A8D58203C6DF200D3E295 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				842A8D5A203C6E1B00D3E295 /* EnvDevEventSource.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		842A8D59203C6DF200D3E295 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				842A8D5C203C72B800D3E295 /* Event.swift */,
+				842A8D5E203C737700D3E295 /* Measurement.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		89545875A4E6AC6DC9D78664 /* Frameworks */ = {
@@ -341,8 +366,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842A8D5D203C72B800D3E295 /* Event.swift in Sources */,
 				842A8D3B203C6B1000D3E295 /* ViewController.swift in Sources */,
+				842A8D5F203C737700D3E295 /* Measurement.swift in Sources */,
 				842A8D39203C6B1000D3E295 /* AppDelegate.swift in Sources */,
+				842A8D5B203C6E1B00D3E295 /* EnvDevEventSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
