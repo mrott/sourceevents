@@ -16,10 +16,10 @@ class Measurement {
     }
 }
 
-class FloatMeasurement: Measurement {
-    var _value: Float
+class DoubleMeasurement: Measurement {
+    var _value: Double
     
-    init(id: Int, value: Float) {
+    init(id: Int, value: Double) {
         _value = value
         super.init(id: id)
     }
