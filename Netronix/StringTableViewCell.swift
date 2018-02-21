@@ -25,4 +25,7 @@ class StringTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func configure(measurement: StringMeasurement) {
+        valueLabel.text = measurement._value + " " + (measurement.event?._unit ?? "")
+    }
 }

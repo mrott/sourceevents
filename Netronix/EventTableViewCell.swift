@@ -25,4 +25,7 @@ class EventTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func configure(event: Event) {
+        nameLabel.text = event._name
+    }
 }

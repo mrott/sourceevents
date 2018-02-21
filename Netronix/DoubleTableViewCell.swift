@@ -25,4 +25,7 @@ class DoubleTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func configure(measurement: DoubleMeasurement) {
+        valueLabel.text = String(format: "%f %@", measurement._value, (measurement.event?._unit ?? ""))
+    }
 }

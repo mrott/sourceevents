@@ -26,4 +26,8 @@ class LocationTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func configure(measurement: LocationMeasurement) {
+        latLabel.text = String(format: "Lat: %f", measurement._value.0)
+        longLabel.text = String(format: "Long: %f", measurement._value.1)
+    }
 }
